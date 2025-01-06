@@ -82,8 +82,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  min-width: 711px;
-  min-height: 386px;
+  width: 711px;
+  height: 386px;
   margin-bottom: 16px;
 }
 
@@ -195,12 +195,8 @@ ol {
 .content__list-container {
   position: relative;
   width: 100%;
-  max-height: 230px;
+  max-height: 300px;
   overflow: scroll;
-}
-
-.content__list-item {
-  margin-bottom: 30px;
 }
 
 .content__video-card {
@@ -215,6 +211,7 @@ ol {
   display: flex;
   justify-content: space-between;
   padding: 3px 0px;
+  margin-bottom: 30px;
 }
 
 .content__video-card-description-container {
