@@ -98,7 +98,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  min-height: 54px;
 }
 
 .search-form__fieldset-title {
@@ -170,10 +169,6 @@ ol {
   background-color: #fff;
 }
 
-.search-form__checkbox:focus {
-  outline: none;
-}
-
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline #fff;
   cursor: pointer;
@@ -184,13 +179,12 @@ ol {
   flex-direction: column;
   grid-area: b;
   gap: 17px;
-  min-width: 399px;
   height: fit-content;
 }
 
 .content__list-container {
   position: relative;
-  width: 100%;
+  width: 395px;
   height: 300px;
   overflow: auto;
 }
@@ -199,7 +193,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  min-width: 398px;
   padding: 2px 2px;
 }
 
@@ -217,7 +210,7 @@ ol {
 
 .content__video-card-thumbnail {
   z-index: 1;
-  min-width: 194px;
+  min-width: 193px;
   height: 103px;
   object-fit: cover;
   object-position: center;
@@ -265,7 +258,7 @@ ol {
 }
 
 .content__video-card-title {
-  max-width: 196px;
+  max-width: 191px;
   margin-bottom: 6px;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -283,7 +276,11 @@ ol {
   font-weight: 400;
   line-height: 16.2px;
   size: 18px;
-  -webkit-line-clamp:4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
 }
 
 .button {
